@@ -1,0 +1,30 @@
+spring:
+  redis:
+    host: 192.168.28.148
+    port: 6379
+    database: 0
+    #password: 123456 暂未设置密码，默认为空
+    #redis连接池，Jedis连接池对象
+    lettuce:
+      pool:
+        max-active: 20  #最大连接数，负值表示没有限制，默认8
+        max-wait: -1    #最大阻塞等待时间，负值表示没限制，默认-1
+        max-idle: 8     #最大空闲连接，默认8
+        min-idle: 0     #最小空闲连接，默认0
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: 127.0.0.1:9300 # es的连接地址及端口号
+      cluster-name: elasticsearch # es集群的名称
+    mongodb:
+      host: localhost # mongodb的连接地址
+      port: 27017 # mongodb的连接端口号
+      database: mall-port # mongodb的连接的数据库，如果启动成功，可以在Robo中看到该数据库
+
+# 自定义jwt key
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mySecret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24)
+  tokenHead: Bearer  #JWT负载中拿到开头
