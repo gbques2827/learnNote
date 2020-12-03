@@ -1,0 +1,25 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: config-client
+  cloud:
+    config: #Config客户端配置
+      uri: http://localhost:8901 #配置中心服务端地址
+      #配置规则，分支名选择，config-dev.yml
+      label: dev #分支名称
+      name: config #配置文件名称
+      profile: dev #启用配置后缀名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/  #配置eureka注册中心地址
+
+#需要添加监控工具类依赖包actuator
+#开启刷新客户端配置信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'

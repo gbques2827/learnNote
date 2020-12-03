@@ -1,0 +1,23 @@
+server:
+  port: 9501
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2-CLIENT-SESSIONID #\u9632\u6B62Cookie\u51B2\u7A81\uFF0C\u51B2\u7A81\u4F1A\u5BFC\u81F4\u767B\u5F55\u9A8C\u8BC1\u4E0D\u901A\u8FC7,\u5373\u6307\u5B9Acookie\u8FDB\u884C\u9A8C\u8BC1
+
+oauth2-server-url: http://localhost:9401
+
+spring:
+  application:
+    name: oauth2-client
+
+security:
+  oauth2: #\u4E0Eoauth2-server\u5BF9\u5E94\u7684\u914D\u7F6E
+    client:
+      client-id: admin
+      client-secret: admin123456
+      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
+      access-token-uri: ${oauth2-server-url}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${oauth2-server-url}/oauth/token_key

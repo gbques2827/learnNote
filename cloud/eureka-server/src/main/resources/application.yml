@@ -1,0 +1,24 @@
+server:
+  port: 8001 #指定运行端口
+spring:
+  application:
+    name: eureka-server #指定服务名称
+eureka:
+  instance:
+    hostname: localhost #指定主机地址
+  client:
+    fetch-registry: false #指定是否要从注册中心获取服务（注册中心不需要开启）
+    register-with-eureka: false #指定是否要注册到注册中心（注册中心不需要开启）
+  server:
+    enable-self-preservation: false #关闭保护模式
+
+#出现这段表示eureka自我保护模式开启了
+#EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY’RE NOT.
+#RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE
+#默认情况下，如果 Ereaka Server 在一段时间内没有接受到某个微服务示例的心跳，
+#便会注销该实例（默认90秒），而一旦进入自我保护模式，那么即使你关闭了指定实例，
+#仍然会发现该 Ereaka Server 的注册实例中会存在被关闭的实例信息
+
+#出现这段表示自我保护模式关闭了
+#HE SELF PRESERVATION MODE IS TURNED OFF. THIS MAY NOT PROTECT INSTANCE
+#EXPIRY IN CASE OF NETWORK/OTHER PROBLEMS.

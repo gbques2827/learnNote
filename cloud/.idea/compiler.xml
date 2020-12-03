@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="turbine-service" />
+        <module name="hystrix-service" />
+        <module name="admin-client" />
+        <module name="eureka-security-server" />
+        <module name="oauth2-client" />
+        <module name="config-client" />
+        <module name="zuul-proxy" />
+        <module name="consul-config-client" />
+        <module name="user-service" />
+        <module name="admin-security-server" />
+        <module name="eureka-server" />
+        <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="consul-ribbon-service" />
+        <module name="oauth2-jwt-server" />
+        <module name="hystrix-dashboard" />
+        <module name="api-gateway" />
+        <module name="cloud-common" />
+        <module name="ribbon-service" />
+        <module name="admin-server" />
+        <module name="consul-user-service" />
+        <module name="oauth2-server" />
+        <module name="feign-service" />
+        <module name="config-security-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-client" target="1.8" />
+      <module name="admin-security-server" target="1.8" />
+      <module name="admin-server" target="1.8" />
+      <module name="api-gateway" target="1.8" />
+      <module name="cloud" target="1.8" />
+      <module name="cloud-common" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-security-server" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="consul-config-client" target="1.8" />
+      <module name="consul-ribbon-service" target="1.8" />
+      <module name="consul-user-service" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-security-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="feign-service" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
+      <module name="hystrix-service" target="1.8" />
+      <module name="oauth2-client" target="1.8" />
+      <module name="oauth2-jwt-server" target="1.8" />
+      <module name="oauth2-server" target="1.8" />
+      <module name="ribbon-service" target="1.8" />
+      <module name="turbine-service" target="1.8" />
+      <module name="user-service" target="1.8" />
+      <module name="zuul-proxy" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-client" options="-parameters" />
+      <module name="admin-security-server" options="-parameters" />
+      <module name="admin-server" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="cloud" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-security-server" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="consul-config-client" options="-parameters" />
+      <module name="consul-ribbon-service" options="-parameters" />
+      <module name="consul-user-service" options="-parameters" />
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-security-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="feign-service" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
+      <module name="hystrix-service" options="-parameters" />
+      <module name="oauth2-client" options="-parameters" />
+      <module name="oauth2-jwt-server" options="-parameters" />
+      <module name="oauth2-server" options="-parameters" />
+      <module name="ribbon-service" options="-parameters" />
+      <module name="turbine-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="zuul-proxy" options="-parameters" />
+    </option>
+  </component>
+</project>

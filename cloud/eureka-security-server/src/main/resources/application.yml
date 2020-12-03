@@ -1,0 +1,17 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: eureka-security-server
+  security: #\u914D\u7F6ESpringSecurity\u767B\u5F55\u7528\u6237\u540D\u548C\u5BC6\u7801
+    user:
+      name: admin
+      password: 123456
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  server:
+    enable-self-preservation: false #\u5173\u95ED\u4FDD\u62A4\u6A21\u5F0F

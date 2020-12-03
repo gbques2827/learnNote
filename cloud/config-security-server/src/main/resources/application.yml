@@ -1,0 +1,17 @@
+server:
+  port: 8905
+spring:
+  application:
+    name: config-security-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/macrozheng/springcloud-config.git
+          username: macro
+          password: 123456
+          clone-on-start: true #\u5F00\u542F\u542F\u52A8\u65F6\u76F4\u63A5\u4ECEgit\u83B7\u53D6\u914D\u7F6E
+  security: #\u914D\u7F6E\u7528\u6237\u540D\u548C\u5BC6\u7801
+    user:
+      name: macro
+      password: 123456

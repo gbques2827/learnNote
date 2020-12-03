@@ -1,0 +1,14 @@
+server:
+  port: 9202
+
+service-url:
+  user-service: http://localhost:8201
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: cookie_route
+          uri: ${service-url.user-service}
+          predicates:
+            - Cookie=username,macro

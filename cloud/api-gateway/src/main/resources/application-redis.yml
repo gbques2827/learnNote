@@ -1,0 +1,30 @@
+server:
+  port: 9204
+spring:
+  redis:
+    host: 192.168.28.152
+    #password: 123456
+    port: 6379
+  cloud:
+    gateway:
+      routes:
+        - id: requestratelimiter_route
+          uri: http://localhost:8201
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1 #每秒允许处理的请求数量
+                redis-rate-limiter.burstCapacity: 1 #每秒最大处理的请求数量
+                key-resolver: "#{@ipKeyResolver}" #限流策略，对应策略的Bean
+          predicates:
+            - Method=GET
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

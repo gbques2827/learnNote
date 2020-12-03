@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/admin-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-security-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-security-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-ribbon-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-security-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-service/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-jwt-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/turbine-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-proxy/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

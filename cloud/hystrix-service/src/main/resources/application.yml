@@ -1,0 +1,20 @@
+server:
+  port: 8401
+spring:
+  application:
+    name: hystrix-service
+eureka:
+  client:
+    register-with-eureka: true #是否注册到服务中心
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://localhost:8001/eureka/ #配置注册中心地址
+service-url:
+  user-service: http://user-service #自定义，远端服务地址
+
+#需要添加监控工具类依赖包actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'hystrix.stream' #暴露hystrix监控端点

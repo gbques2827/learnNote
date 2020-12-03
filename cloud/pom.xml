@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gbques.ly</groupId>
+    <artifactId>cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>cloud</name>
+    <description>微服务搭建</description>
+
+    <!--子模块，建立子模块时，父工程会自动添加-->
+    <modules>
+        <module>eureka-server</module>
+        <module>eureka-client</module>
+        <module>eureka-security-server</module>
+        <module>user-service</module>
+        <module>cloud-common</module>
+        <module>ribbon-service</module>
+        <module>hystrix-service</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine-service</module>
+        <module>feign-service</module>
+        <module>zuul-proxy</module>
+        <module>config-server</module>
+        <module>config-client</module>
+        <module>config-security-server</module>
+        <module>consul-user-service</module>
+        <module>consul-ribbon-service</module>
+        <module>consul-config-client</module>
+        <module>api-gateway</module>
+        <module>admin-server</module>
+        <module>admin-client</module>
+        <module>admin-security-server</module>
+        <module>oauth2-server</module>
+        <module>oauth2-jwt-server</module>
+        <module>oauth2-client</module>
+    </modules>
+
+    <!-- 统一管理jar包版本 -->
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+    </properties>
+
+    <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
+    <dependencyManagement>
+        <dependencies>
+            <!--spring-cloud依赖，springboot2.1对应Greenwich.SR3 -->
+            <!--查看版本对应关系直接查看springcloud官网：https://spring.io/projects/spring-cloud/-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 用于jar打包，在总项目使用后，在子项目就不需要了   -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.8.RELEASE</version>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
