@@ -1,0 +1,17 @@
+server:
+  port: 8206
+spring:
+  application:
+    name: nacos-user-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #\u914D\u7F6ENacos\u5730\u5740
+
+#\u9700\u8981\u6DFB\u52A0\u76D1\u63A7\u5DE5\u5177\u7C7B\u4F9D\u8D56\u5305actuator
+#\u66B4\u9732\u6240\u6709\u7AEF\u70B9
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

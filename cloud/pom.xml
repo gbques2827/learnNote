@@ -36,6 +36,13 @@
         <module>oauth2-server</module>
         <module>oauth2-jwt-server</module>
         <module>oauth2-client</module>
+        <module>nacos-user-service</module>
+        <module>nacos-ribbon-service</module>
+        <module>nacos-config-client</module>
+        <module>sentinel-service</module>
+        <module>seata-order-service</module>
+        <module>seata-storage-service</module>
+        <module>seata-account-service</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->

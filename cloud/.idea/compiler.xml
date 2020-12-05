@@ -6,27 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="turbine-service" />
-        <module name="hystrix-service" />
+        <module name="seata-account-service" />
         <module name="admin-client" />
-        <module name="eureka-security-server" />
-        <module name="oauth2-client" />
         <module name="config-client" />
         <module name="zuul-proxy" />
-        <module name="consul-config-client" />
         <module name="user-service" />
         <module name="admin-security-server" />
         <module name="eureka-server" />
-        <module name="config-server" />
-        <module name="eureka-client" />
+        <module name="seata-storage-service" />
         <module name="consul-ribbon-service" />
         <module name="oauth2-jwt-server" />
+        <module name="nacos-user-service" />
         <module name="hystrix-dashboard" />
+        <module name="ribbon-service" />
+        <module name="sentinel-service" />
+        <module name="consul-user-service" />
+        <module name="nacos-ribbon-service" />
+        <module name="mall-oauth2-auth" />
+        <module name="seata-order-service" />
+        <module name="turbine-service" />
+        <module name="hystrix-service" />
+        <module name="eureka-security-server" />
+        <module name="oauth2-client" />
+        <module name="consul-config-client" />
+        <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="nacos-config-client" />
         <module name="api-gateway" />
         <module name="cloud-common" />
-        <module name="ribbon-service" />
         <module name="admin-server" />
-        <module name="consul-user-service" />
         <module name="oauth2-server" />
         <module name="feign-service" />
         <module name="config-security-server" />
@@ -51,10 +59,18 @@
       <module name="feign-service" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-service" target="1.8" />
+      <module name="mall-oauth2-auth" target="1.8" />
+      <module name="nacos-config-client" target="1.8" />
+      <module name="nacos-ribbon-service" target="1.8" />
+      <module name="nacos-user-service" target="1.8" />
       <module name="oauth2-client" target="1.8" />
       <module name="oauth2-jwt-server" target="1.8" />
       <module name="oauth2-server" target="1.8" />
       <module name="ribbon-service" target="1.8" />
+      <module name="seata-account-service" target="1.8" />
+      <module name="seata-order-service" target="1.8" />
+      <module name="seata-storage-service" target="1.8" />
+      <module name="sentinel-service" target="1.8" />
       <module name="turbine-service" target="1.8" />
       <module name="user-service" target="1.8" />
       <module name="zuul-proxy" target="1.8" />
@@ -79,10 +95,18 @@
       <module name="feign-service" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
       <module name="hystrix-service" options="-parameters" />
+      <module name="mall-oauth2-auth" options="-parameters" />
+      <module name="nacos-config-client" options="-parameters" />
+      <module name="nacos-ribbon-service" options="-parameters" />
+      <module name="nacos-user-service" options="-parameters" />
       <module name="oauth2-client" options="-parameters" />
       <module name="oauth2-jwt-server" options="-parameters" />
       <module name="oauth2-server" options="-parameters" />
       <module name="ribbon-service" options="-parameters" />
+      <module name="seata-account-service" options="-parameters" />
+      <module name="seata-order-service" options="-parameters" />
+      <module name="seata-storage-service" options="-parameters" />
+      <module name="sentinel-service" options="-parameters" />
       <module name="turbine-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
       <module name="zuul-proxy" options="-parameters" />
